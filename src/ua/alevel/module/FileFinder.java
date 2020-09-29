@@ -11,6 +11,14 @@ public class FileFinder {
 
     public static void main(String[] args) {
 
+        System.out.println("example of queries:");
+        System.out.println("for directory searching: find -d module");
+        System.out.println("for file searching: " +
+                "find -f 1.txt C:\\Users\\User\\IdeaProjects\\exam-3\\src");
+        System.out.println("for keyword searching: find -k lalala");
+        System.out.println("for size searching: find -s 0-15");
+        System.out.println("\ninput search query. 'quit' to exit program.");
+
         ExecutorService executor = Executors.newSingleThreadExecutor();
         String query;
         while (!(query = scanner.nextLine()).equals("quit")) {
